@@ -21,7 +21,14 @@ function ContentWrapper (){
                <ul>
                 { 
                    dataApi.map(item => (
-                       <li>{item.name}</li>
+                     <div> 
+                        <li>{item.name}</li>
+                        <div>
+                            <img src={item.image} alt={item.id}/>
+                            
+                        </div>
+                    </div> 
+                    
                     ))
                     }
               </ul> 
